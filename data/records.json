@@ -1,14 +1,901 @@
 {
   "version": 2,
-  "members": [],
+  "members": [
+    {
+      "id": "matcha-rider",
+      "name": "matcha rider",
+      "icon": "🍵",
+      "initial": "ma",
+      "color": "#4FEE57"
+    },
+    {
+      "id": "masamasa-god",
+      "name": "masamasa god",
+      "icon": "👑",
+      "initial": "ma",
+      "color": "#4FEE57"
+    },
+    {
+      "id": "ge",
+      "name": "げ",
+      "icon": "🐈",
+      "initial": "げ",
+      "color": "#4FEE57"
+    },
+    {
+      "id": "akkun-2",
+      "name": "あっくん2世",
+      "icon": "♠",
+      "initial": "あっ",
+      "color": "#4FEE57"
+    },
+    {
+      "id": "akkun-1",
+      "name": "あっくん1世",
+      "icon": "⚡",
+      "initial": "あっ",
+      "color": "#4FEE57"
+    },
+    {
+      "id": "tetsuko",
+      "name": "てつこ",
+      "icon": "🌙",
+      "initial": "てつ",
+      "color": "#4FEE57"
+    },
+    {
+      "id": "kokona",
+      "name": "ここな",
+      "icon": "♣",
+      "initial": "ここ",
+      "color": "#4FEE57"
+    }
+  ],
   "seasons": [
     {
-      "id": "175670a3-0015-4b6c-bbec-cd3a7c3bb418",
-      "name": "シーズン 1",
-      "start": "2026-10-27",
+      "id": "october-2026-sample",
+      "name": "October",
+      "start": "2026-10-01",
       "end": null,
-      "base": 0,
-      "events": []
+      "base": 650,
+      "events": [
+        {
+          "id": "october-day-1",
+          "type": "event",
+          "date": "2026-10-18",
+          "name": "Day 1 · 仮日付",
+          "dateEstimated": true,
+          "results": [
+            {
+              "id": "matcha-rider",
+              "chips": {
+                "1": 0,
+                "5": 26,
+                "10": 4,
+                "25": 9,
+                "100": 5,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 895,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 650,
+              "sourceName": "matcha_rider"
+            },
+            {
+              "id": "masamasa-god",
+              "chips": {
+                "1": 0,
+                "5": 1,
+                "10": 0,
+                "25": 8,
+                "100": 3,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 505,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 650,
+              "sourceName": "masamasagod"
+            },
+            {
+              "id": "ge",
+              "chips": {
+                "1": 0,
+                "5": 7,
+                "10": 14,
+                "25": 7,
+                "100": 2,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 550,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 650,
+              "sourceName": "げ"
+            }
+          ],
+          "sourceSheet": "Day 1"
+        },
+        {
+          "id": "october-day-2",
+          "type": "event",
+          "date": "2026-10-19",
+          "name": "Day 2 · 仮日付",
+          "dateEstimated": true,
+          "results": [
+            {
+              "id": "matcha-rider",
+              "chips": {
+                "1": 0,
+                "5": 8,
+                "10": 10,
+                "25": 7,
+                "100": 13,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 1615,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 895,
+              "sourceName": "matcha_rider"
+            },
+            {
+              "id": "masamasa-god",
+              "chips": {
+                "1": 0,
+                "5": 7,
+                "10": 7,
+                "25": 8,
+                "100": 4,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 705,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 505,
+              "sourceName": "masamadagod"
+            },
+            {
+              "id": "ge",
+              "chips": {
+                "1": 0,
+                "5": 5,
+                "10": 9,
+                "25": 9,
+                "100": 5,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 840,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 550,
+              "sourceName": "げ"
+            },
+            {
+              "id": "akkun-2",
+              "chips": {
+                "1": 0,
+                "5": 4,
+                "10": 2,
+                "25": 0,
+                "100": 0,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 40,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 950,
+              "sourceName": "あっくん2世"
+            }
+          ],
+          "sourceSheet": "Day 2"
+        },
+        {
+          "id": "october-day-3",
+          "type": "event",
+          "date": "2026-10-20",
+          "name": "Day 3 · 仮日付",
+          "dateEstimated": true,
+          "results": [
+            {
+              "id": "matcha-rider",
+              "chips": {
+                "1": 0,
+                "5": 5,
+                "10": 5,
+                "25": 4,
+                "100": 15,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 1675,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 1615,
+              "sourceName": "matcha_rider"
+            },
+            {
+              "id": "masamasa-god",
+              "chips": {
+                "1": 0,
+                "5": 12,
+                "10": 8,
+                "25": 8,
+                "100": 1,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 440,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 705,
+              "sourceName": "masamadagod"
+            },
+            {
+              "id": "ge",
+              "chips": {
+                "1": 0,
+                "5": 11,
+                "10": 9,
+                "25": 6,
+                "100": 15,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 1795,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 840,
+              "sourceName": "げ"
+            },
+            {
+              "id": "akkun-2",
+              "chips": {
+                "1": 0,
+                "5": 4,
+                "10": 2,
+                "25": 0,
+                "100": 0,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 40,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 950,
+              "sourceName": "あっくん2世"
+            }
+          ],
+          "sourceSheet": "Day 3"
+        },
+        {
+          "id": "october-day-4",
+          "type": "event",
+          "date": "2026-10-21",
+          "name": "Day 4 · 仮日付",
+          "dateEstimated": true,
+          "results": [
+            {
+              "id": "matcha-rider",
+              "chips": {
+                "1": 0,
+                "5": 3,
+                "10": 0,
+                "25": 5,
+                "100": 19,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 2040,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 1925,
+              "sourceName": "matcha_rider"
+            },
+            {
+              "id": "masamasa-god",
+              "chips": {
+                "1": 0,
+                "5": 1,
+                "10": 2,
+                "25": 1,
+                "100": 3,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 350,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 690,
+              "sourceName": "masamadagod"
+            },
+            {
+              "id": "ge",
+              "chips": {
+                "1": 0,
+                "5": 11,
+                "10": 7,
+                "25": 7,
+                "100": 15,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 1800,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 2045,
+              "sourceName": "げ"
+            },
+            {
+              "id": "akkun-2",
+              "chips": {
+                "1": 0,
+                "5": 7,
+                "10": 10,
+                "25": 9,
+                "100": 4,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 760,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 290,
+              "sourceName": "あっくん2世"
+            }
+          ],
+          "sourceSheet": "Day4"
+        },
+        {
+          "id": "october-day-5",
+          "type": "event",
+          "date": "2026-10-22",
+          "name": "Day 5 · 仮日付",
+          "dateEstimated": true,
+          "results": [
+            {
+              "id": "matcha-rider",
+              "chips": {
+                "1": 0,
+                "5": 3,
+                "10": 0,
+                "25": 5,
+                "100": 19,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 2040,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 2040,
+              "sourceName": "matcha_rider"
+            },
+            {
+              "id": "masamasa-god",
+              "chips": {
+                "1": 0,
+                "5": 1,
+                "10": 2,
+                "25": 1,
+                "100": 3,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 350,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 350,
+              "sourceName": "masamadagod"
+            },
+            {
+              "id": "ge",
+              "chips": {
+                "1": 0,
+                "5": 11,
+                "10": 7,
+                "25": 7,
+                "100": 15,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 1800,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 1800,
+              "sourceName": "げ"
+            },
+            {
+              "id": "akkun-2",
+              "chips": {
+                "1": 0,
+                "5": 7,
+                "10": 10,
+                "25": 9,
+                "100": 4,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 760,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 460,
+              "sourceName": "あっくん2世"
+            }
+          ],
+          "sourceSheet": "Day5"
+        },
+        {
+          "id": "october-day-6",
+          "type": "event",
+          "date": "2026-10-23",
+          "name": "Day 6 · 仮日付",
+          "dateEstimated": true,
+          "results": [
+            {
+              "id": "matcha-rider",
+              "chips": {
+                "1": 0,
+                "5": 6,
+                "10": 11,
+                "25": 7,
+                "100": 18,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 2115,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 2290,
+              "sourceName": "matcha_rider"
+            },
+            {
+              "id": "masamasa-god",
+              "chips": {
+                "1": 0,
+                "5": 8,
+                "10": 14,
+                "25": 1,
+                "100": 4,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 605,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 600,
+              "sourceName": "masamadagod"
+            },
+            {
+              "id": "ge",
+              "chips": {
+                "1": 0,
+                "5": 6,
+                "10": 6,
+                "25": 10,
+                "100": 23,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 2640,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 2050,
+              "sourceName": "げ"
+            },
+            {
+              "id": "akkun-1",
+              "chips": {
+                "1": 0,
+                "5": 7,
+                "10": 3,
+                "25": 1,
+                "100": 2,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 290,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 710,
+              "sourceName": "あっくん1世"
+            }
+          ],
+          "sourceSheet": "Day6"
+        },
+        {
+          "id": "october-day-7",
+          "type": "event",
+          "date": "2026-10-24",
+          "name": "Day 7 · 仮日付",
+          "dateEstimated": true,
+          "results": [
+            {
+              "id": "matcha-rider",
+              "chips": {
+                "1": 3,
+                "5": 4,
+                "10": 5,
+                "25": 4,
+                "100": 22,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 2373,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 2365,
+              "sourceName": "matcha_rider"
+            },
+            {
+              "id": "masamasa-god",
+              "chips": {
+                "1": 42,
+                "5": 15,
+                "10": 19,
+                "25": 10,
+                "100": 8,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 1357,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 855,
+              "sourceName": "masamadagod"
+            },
+            {
+              "id": "ge",
+              "chips": {
+                "1": 16,
+                "5": 10,
+                "10": 3,
+                "25": 0,
+                "100": 27,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 2796,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 2890,
+              "sourceName": "げ"
+            },
+            {
+              "id": "akkun-1",
+              "chips": {
+                "1": 0,
+                "5": 7,
+                "10": 7,
+                "25": 5,
+                "100": 3,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 530,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 540,
+              "sourceName": "あっくん1世"
+            },
+            {
+              "id": "tetsuko",
+              "chips": {
+                "1": 14,
+                "5": 5,
+                "10": 12,
+                "25": 2,
+                "100": 5,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 709,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 650,
+              "sourceName": "てつこ"
+            },
+            {
+              "id": "kokona",
+              "chips": {
+                "1": 5,
+                "5": 4,
+                "10": 1,
+                "25": 1,
+                "100": 2,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 260,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 650,
+              "sourceName": "ここな"
+            }
+          ],
+          "sourceSheet": "Day7"
+        },
+        {
+          "id": "october-day-8",
+          "type": "event",
+          "date": "2026-10-25",
+          "name": "Day 8 · 仮日付",
+          "dateEstimated": true,
+          "results": [
+            {
+              "id": "matcha-rider",
+              "chips": {
+                "1": 12,
+                "5": 5,
+                "10": 3,
+                "25": 2,
+                "100": 23,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 2417,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 2623,
+              "sourceName": "matcha_rider"
+            },
+            {
+              "id": "masamasa-god",
+              "chips": {
+                "1": 5,
+                "5": 13,
+                "10": 16,
+                "25": 13,
+                "100": 14,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 1955,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 1607,
+              "sourceName": "masamadagod"
+            },
+            {
+              "id": "ge",
+              "chips": {
+                "1": 14,
+                "5": 14,
+                "10": 8,
+                "25": 2,
+                "100": 27,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 2914,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 3046,
+              "sourceName": "げ"
+            },
+            {
+              "id": "akkun-1",
+              "chips": {
+                "1": 0,
+                "5": 7,
+                "10": 7,
+                "25": 5,
+                "100": 3,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 530,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 540,
+              "sourceName": "あっくん1世"
+            },
+            {
+              "id": "tetsuko",
+              "chips": {
+                "1": 14,
+                "5": 5,
+                "10": 12,
+                "25": 2,
+                "100": 5,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 709,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 650,
+              "sourceName": "てつこ"
+            },
+            {
+              "id": "kokona",
+              "chips": {
+                "1": 5,
+                "5": 4,
+                "10": 1,
+                "25": 1,
+                "100": 2,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 260,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 650,
+              "sourceName": "ここな"
+            }
+          ],
+          "sourceSheet": "Day8"
+        },
+        {
+          "id": "october-day-9",
+          "type": "event",
+          "date": "2026-10-26",
+          "name": "Day 9",
+          "dateEstimated": false,
+          "results": [
+            {
+              "id": "matcha-rider",
+              "chips": {
+                "1": 19,
+                "5": 8,
+                "10": 9,
+                "25": 3,
+                "100": 11,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 1324,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 2667,
+              "sourceName": "matcha_rider"
+            },
+            {
+              "id": "masamasa-god",
+              "chips": {
+                "1": 15,
+                "5": 7,
+                "10": 3,
+                "25": 3,
+                "100": 29,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 3055,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 2205,
+              "sourceName": "masamadagod"
+            },
+            {
+              "id": "ge",
+              "chips": {
+                "1": 10,
+                "5": 1,
+                "10": 2,
+                "25": 4,
+                "100": 28,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 2935,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 3164,
+              "sourceName": "げ"
+            },
+            {
+              "id": "tetsuko",
+              "chips": {
+                "1": 15,
+                "5": 10,
+                "10": 12,
+                "25": 7,
+                "100": 9,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 1260,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 959,
+              "sourceName": "てつこ"
+            }
+          ],
+          "sourceSheet": "Day9"
+        },
+        {
+          "id": "october-day-10",
+          "type": "event",
+          "date": "2026-10-27",
+          "name": "Day 10",
+          "dateEstimated": false,
+          "results": [
+            {
+              "id": "matcha-rider",
+              "chips": {
+                "1": 14,
+                "5": 11,
+                "10": 12,
+                "25": 6,
+                "100": 6,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 939,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 1574,
+              "sourceName": "matcha_rider"
+            },
+            {
+              "id": "masamasa-god",
+              "chips": {
+                "1": 7,
+                "5": 1,
+                "10": 4,
+                "25": 0,
+                "100": 35,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 3552,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 3305,
+              "sourceName": "masamadagod"
+            },
+            {
+              "id": "ge",
+              "chips": {
+                "1": 4,
+                "5": 13,
+                "10": 12,
+                "25": 11,
+                "100": 36,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 4064,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 3185,
+              "sourceName": "げ"
+            },
+            {
+              "id": "tetsuko",
+              "chips": {
+                "1": 15,
+                "5": 10,
+                "10": 12,
+                "25": 7,
+                "100": 9,
+                "500": 0,
+                "1000": 0
+              },
+              "stack": 1260,
+              "bonus": 0,
+              "inferred": false,
+              "sourceInitial": 1260,
+              "sourceName": "てつこ"
+            }
+          ],
+          "sourceSheet": "Day10"
+        }
+      ],
+      "notes": "Google Sheetsからのサンプル。Day1〜8の開催日は仮置き。元シートのTotal Scoreを終了残高として取り込み、追加ボーナスは加算していません。開始残高はsourceInitialに保持。"
     }
-  ]
+  ],
+  "importSource": {
+    "url": "https://docs.google.com/spreadsheets/d/1jpMH5bk0kNcEYgJJvYkdYretYUMSlAUdePuLdkhfYTA/edit",
+    "dateMapping": "Day1〜8=10/18〜25（仮）、Day9=10/26、Day10=10/27"
+  }
 }
