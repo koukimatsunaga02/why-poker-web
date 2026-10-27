@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "members": [],
+  "seasons": [
+    {
+      "id": "175670a3-0015-4b6c-bbec-cd3a7c3bb418",
+      "name": "シーズン 1",
+      "start": "2026-10-27",
+      "end": null,
+      "base": 0,
+      "events": []
+    }
+  ]
+}

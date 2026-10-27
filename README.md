@@ -1,39 +1,35 @@
 # why — poker with friends
 
-Texas Hold’em results for a small private circle. Black widget UI, IBM Plex Sans, neon why logo. Responsive desktop/mobile. Tap, drag, or use arrow/Home/End keys on the home chart to inspect end-of-day balances. Multiple adjustments on one day are represented by that day's last recorded balance.
+Responsive poker results tracker for a small friend group. Black widget UI, IBM Plex Sans, pink why logo. Home chart supports tap/drag and arrow/Home/End keys to inspect recorded daily balances.
 
-## Hosting and data
+- **Viewer:** https://koukimatsunaga02.github.io/why-poker-web/
+- **Editor:** https://koukimatsunaga02.github.io/why-poker-web/edit.html
 
-- GitHub Pages serves the static files in the repository root from `main`.
-- `data/vault.json` is **AES-256-GCM encrypted JSON**, using a random 256-bit viewer key, random 96-bit IV for every save, a 128-bit authentication tag, and versioned additional authenticated data.
-- The public repository contains no plaintext player records, viewer keys, or GitHub tokens. Anyone can download the ciphertext; only key holders can decrypt it. The code, update time, and encrypted file size are public.
-- The owner enters a fine-grained GitHub token for **this repository only**, with **Contents: Read and write**, in the app's connection panel. The token is sent only to `api.github.com` using an Authorization header and lives in memory until reload/lock. Do not give it to viewers. It can also edit the repository's application code; keep it under the owner's control.
-- Viewer keys also live only in memory. Give friends the site URL and viewer key separately. No key in query strings, fragments, localStorage, source, or Git history.
-- Updates use GitHub Contents API with a blob SHA compare-and-swap. Stale writes are rejected rather than merged or silently overwritten. Failed submissions remain in the form/in-memory draft, with a JSON export option. No local-only fallback is reported as saved.
-- Refresh in the connection panel to see another organizer's changes. Reloading requires entering the viewer key and, for editing, the token again.
+The viewer opens automatically with no login or viewer key. It shows rankings, members, chip balances, events and graphs. Editing controls and token entry are absent. Both URLs use the same `data/records.json` in this public repository. Records are ordinary JSON, not encrypted. Anyone can read the data; do not put private information in it. `noindex` is a search-engine hint, not access control.
 
-This is a low-frequency, single-organizer solution, not a SQL database. API rate limits, token expiry and GitHub outages can interrupt access. Plaintext is limited to 600 KB so the Base64 encrypted file stays within Contents API limits; use small avatar images. Back up encrypted JSON and the key separately. Loss of the key means loss of access to the corresponding encrypted records. Git commit history preserves older encrypted states. A viewer key shared with someone cannot revoke access to old downloaded copies. To recover a previous state, download that commit's `data/vault.json`, import it with the matching viewer key, review the counts, and save it as a new commit.
+The editor requires the owner's fine-grained GitHub token only for saving. Scope it to **why-poker-web only**, **Contents: Read and write**, with a short expiry. The token can also modify this repository's application code; keep it with the owner. Enter it in the editor's `編集・共有` panel. Tokens live in memory, are sent only to `api.github.com`, and are never written to source, browser persistent storage, or data files. Reloading clears the token. The editor URL alone does not grant GitHub write permission. The storage client also rejects writes from viewer mode.
 
-## Initial setup and migration
+GitHub Pages serves `main` from the repository root with HTTPS. No custom domain or server. Writes use the Contents API with a blob SHA, reject stale writers, and preserve prior states in Git history. Refresh from `共有・更新` to see another screen's changes. Failed writes retain the input/draft and offer JSON export. This is intended for low-frequency organizer updates, not real-time play. Data limit: 600 KB; avatars: 250 KB each. GitHub API limits and outages can interrupt reads/writes.
 
-The deployed initial vault has **no players or match results**, with one zero-base season. This avoids treating prototype samples as real results.
+## Start / migrate
 
-1. Open the site and enter the viewer key supplied separately. Keep that key in a password manager or offline backup.
-2. In `共有・接続`, open GitHub's fine-grained token page. Select the owner account, `Only select repositories` → `why-poker-web`, short expiration, `Contents: Read and write`. Generate it yourself; never send the token through chat or commit it.
-3. Paste the token into the app's password field. It is used only for this open page.
-4. On the device/browser with the real prototype data, use `記録` → `データを書き出す` to export JSON.
-5. On the new site, use `共有・接続` → JSON import, review member/season/record counts, then save. All prototype seasons and denomination counts are retained. Existing GitHub content remains in commit history.
-6. Verify from another browser with only the viewer key. Share the site URL and viewer key directly with friends; the token stays with the organizer.
+1. Open the viewer URL directly, or the editor URL for management.
+2. In the editor's connection panel, create and enter a fine-grained token scoped as above. Do not send the token through chat.
+3. On the device containing the actual old prototype data, export JSON from `記録` → `データを書き出す`.
+4. In the editor, import that JSON, review member/season/record counts, then save to GitHub.
+5. Verify the result from the viewer URL in another browser.
 
-## Development and verification
+The initial shared data is empty: one season, no members/results. Prototype samples were not treated as real results. Existing denomination counts, bonuses and seasons are retained on import. Archived seasons stay editable; member deletion is reversible.
 
-No build step or external JS dependencies. `index.html`, `style.css`, `config.js`, `vault.js`, `connection.js`, `app.js` are deployed directly. Tests live in `tests/`.
+Back up from `編集・共有` → JSON backup. To restore, import a previous backup and review before saving. You can also retrieve an older `data/records.json` from Git history. Legacy encrypted backups can be imported with their old key; opening the current site never needs that key. The old `data/vault.json` is a retired encrypted snapshot, retained for recovery only.
+
+## Development
+
+No build step. Static assets have content-hash query versions in both HTML entry points; update those hashes when changing assets.
 
 ```sh
 node --test tests/storage.test.cjs
 python3 -m http.server 4176
 ```
 
-Tests cover authenticated encryption, invalid schema, rejected writes, optimistic concurrency, daily history, season isolation, and reversible member deletion. Test data/keys never belong in the production vault.
-
-The original private `why-poker` repository remains the prototype source archive. Production lives in `why-poker-web`.
+Tests cover data validation, Unicode serialization, API rejection, concurrent updates, viewer write rejection, daily chart snapshots, archived-season isolation and member restore. Legacy decryption is tested for import compatibility. Real owner-token setup and migration remain user steps.
