@@ -1,0 +1,7 @@
+{
+  "format": "why-encrypted",
+  "version": 1,
+  "algorithm": "AES-256-GCM",
+  "iv": "hu61T3FDFnkpPfGK",
+  "ciphertext": "lDJXIGPSL6TObiMqcAL7BnruZ5pwnySiNItDd+lcWRkpdeKvFeT03nAdjboNq6MvwI1K0jzWst11/5mfWy0GTFnwBvhQbIRMJ7CjVfSqowQdfxkn9+k0BaQ6x8H7aqPjEXRifPZvdsiG9Ovo1xDLRxJDLyq1dkWDF3rKmojsm05zlndY6bezMkCBNUk5/xL89deMaCvvgaBKfFn0A0DbQvBUkeficVCQ9SvT+502Gbcj"
+}
